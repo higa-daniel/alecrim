@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Alecrim Delivery</string>
+    <string name="email_hint">EMAIL</string>
+    <string name="password_hint">SENHA</string>
+    <string name="login_button">ENTRAR</string>
+    <string name="login_email_error">Preencha um endereço de email válido.</string>
+    <string name="login_password_error">Preencha a senha corretamente.</string>
+    <string name="login_error">Não foi possível efetuar o login.</string>
+    <string name="login_success">Login efetuado com sucesso.</string>
+
+    <string name="orders_next_delivery">PRÓXIMA ENTREGA</string>
+    <string name="orders_time_min">Min</string>
+    <string name="orders_waiting_deliveries">ENTREGAS EM ESPERA</string>
+
+    <string name="order_info_data">Dados da Entrega</string>
+    <string name="order_info_address">Endereço de Entrega</string>
+    <string name="order_info_customer">Cliente</string>
+    <string name="order_info_payment_method">Forma de Pagamento</string>
+    <string name="order_info_status">Status do Pedido</string>
+
+    <string name="order_status_on_the_way">A Caminho</string>
+    <string name="order_status_3minutes">Chegando em 3 minutos!</string>
+    <string name="order_status_arrived">Chegamos!</string>
+    <string name="order_status_delivered">Entregue</string>
+    <string name="order_status_delivery_problem">Problema na Entrega</string>
+    <string name="order_status_payment_error">Ops.. Erro no Pagamento</string>
+
+    <string name="payment_type_creditcard">Cartão de Crédito</string>
+    <string name="payment_type_alelo">Vale Refeição (Alelo / Visa Vale)</string>
+    <string name="payment_type_sodexo">Vale Refeição (Sodexo)</string>
+    <string name="payment_type_ticket">Vale Refeição (Ticket Restaurante)</string>
+    <string name="payment_type_vrsmart">Vale Refeição (VR Smart)</string>
+
+    <string name="title_activity_main">Alecrim Delivery</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

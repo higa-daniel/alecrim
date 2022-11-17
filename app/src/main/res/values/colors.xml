@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primaryColor">#4F8B16</color>
+    <color name="secondColor">#679B2E</color>
+    <color name="routeButtonColor">#C13825</color>
+    <color name="ordersGrayText">#9B9B9B</color>
+    <color name="ordersGreenText">#5E8226</color>
+    <color name="fieldBorderColor">#EFEFEF</color>
+    <color name="loginButtonColor">#C13825</color>
+    <color name="orderInfoBkgColor">#FAFAFA</color>
+    <color name="separatorColor">#979797</color>
+</resources>

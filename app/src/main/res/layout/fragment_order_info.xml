@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="@dimen/order_info_padding"
+              android:background="@color/orderInfoBkgColor"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/order_info_padding"
+            android:layout_marginBottom="@dimen/order_info_text_margin_bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_map"/>
+
+                <TextView
+                    android:id="@+id/lblOrderAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/order_info_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ordersGrayText"
+                    android:textSize="@dimen/order_info_text"
+                    android:text="@string/order_info_address"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOrderAddress"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/order_info_text_value"
+                android:text="Endereço"
+                android:textColor="@color/loginButtonColor"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/order_info_padding"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/order_info_text_margin_bottom"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_face"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/lblOrderCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/order_info_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ordersGrayText"
+                    android:textSize="@dimen/order_info_text"
+                    android:text="@string/order_info_customer"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOrderCustomer"
+                android:layout_width="wrap_content"
+                android:text="Cliente"
+                android:textSize="@dimen/order_info_text_value"
+                android:textColor="@color/loginButtonColor"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/order_info_padding"
+            android:layout_marginBottom="@dimen/order_info_text_margin_bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_card"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/lblPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/order_info_text_margin_left"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ordersGrayText"
+                    android:textSize="@dimen/order_info_text"
+                    android:text="@string/order_info_payment_method"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOrderPaymentMethod"
+                android:layout_width="wrap_content"
+                android:text="Forma de Pagamento"
+                android:textSize="@dimen/order_info_text_value"
+                android:textColor="@color/loginButtonColor"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/order_info_text_money_margin"
+        android:layout_marginRight="@dimen/order_info_text_money_margin"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:text="R$ 0,00"
+        android:gravity="center"
+        android:textSize="@dimen/order_info_text_money"
+        android:textColor="@color/ordersGrayText"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/order_info_text_money_margin"
+        android:layout_marginRight="@dimen/order_info_text_money_margin"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:background="@color/separatorColor"/>
+
+    <TextView
+        android:id="@+id/lblOrderStatus"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/order_info_padding"
+        android:textSize="@dimen/order_info_text"
+        android:layout_marginBottom="@dimen/order_info_padding"
+        android:text="@string/order_info_status"
+        android:textColor="@color/ordersGrayText"
+        />
+
+    <Button
+        android:id="@+id/btnOrderStatus"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bkg_button"
+        android:textSize="18sp"
+        android:padding="@dimen/login_button_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_status_on_the_way"/>
+
+</LinearLayout>

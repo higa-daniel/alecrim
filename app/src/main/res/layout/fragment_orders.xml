@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".fragments.OrdersFragment"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vwOrderInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondColor"
+        android:padding="@dimen/orders_padding"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/txtNextDelivery"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:text="@string/orders_next_delivery"
+                  android:textSize="@dimen/orders_text_size"
+                  android:layout_marginBottom="@dimen/orders_text_margin"
+                  android:textColor="@android:color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/secondColor"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:id="@+id/imgOrderNumber"
+                android:layout_marginRight="@dimen/orders_img_margin"
+                android:src="@drawable/shopping_bag_white"
+                android:layout_height="18dp"/>
+
+            <TextView android:id="@+id/txtOrderNumber"
+                      android:layout_centerInParent="true"
+                      android:layout_toRightOf="@id/imgOrderNumber"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textSize="@dimen/orders_text_size"
+                      android:layout_marginRight="@dimen/orders_text_margin_right"
+                      android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/imgOrderTime"
+                android:layout_width="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_clock_white"
+                android:layout_toRightOf="@id/txtOrderNumber"
+                android:layout_marginRight="@dimen/orders_img_margin"
+                android:layout_height="18dp"/>
+
+            <TextView android:id="@+id/txtDeliveryTime"
+                      android:layout_toRightOf="@id/imgOrderTime"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:textSize="@dimen/orders_text_size"
+                      android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/txtPaymentMethod"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="@dimen/orders_text_margin"
+                  android:textSize="@dimen/orders_text_size"
+                  android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnOrderInfo"
+        android:layout_below="@id/vwOrderInfo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="-24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_order_info"
+        android:src="@drawable/ic_directions_white_36dp"/>
+
+    <TextView android:id="@+id/txtWaitingDeliveries"
+              android:layout_below="@id/vwOrderInfo"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="@string/orders_waiting_deliveries"
+              android:textSize="@dimen/orders_text_size"
+              android:layout_marginLeft="@dimen/orders_padding"
+              android:layout_marginTop="@dimen/orders_text_margin"
+              android:layout_marginBottom="@dimen/orders_text_margin"
+              android:textColor="@color/ordersGrayText"/>
+
+    <ListView
+        android:layout_below="@id/txtWaitingDeliveries"
+        android:id="@+id/lstOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

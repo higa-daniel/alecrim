@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:padding="@dimen/orders_item_padding"
+              android:layout_gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_marginRight="@dimen/orders_img_margin"
+            android:src="@drawable/shopping_bag_green"
+            android:layout_height="22dp"/>
+
+        <TextView android:id="@+id/txtItemOrderNumber"
+                  android:layout_height="wrap_content"
+                  android:layout_width="@dimen/orders_text_width"
+                  android:textSize="@dimen/orders_text_size"
+                  android:text="00000"
+                  android:layout_marginRight="@dimen/orders_text_margin"
+                  android:textColor="@color/ordersGreenText"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_clock_green"
+            android:layout_width="30dp"
+            android:layout_marginRight="@dimen/orders_img_margin"
+            android:layout_height="22dp"/>
+
+        <TextView android:id="@+id/txtItemDeliveryTime"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="0 Min"
+                  android:textSize="@dimen/orders_text_size"
+                  android:textColor="@color/ordersGreenText"/>
+    </LinearLayout>
+</LinearLayout>
